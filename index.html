@@ -8,10 +8,14 @@
 <body>
     <h1>Relatório de sensores</h1>
     <form id="form-csv">
-        <label for="csv-files">Selecione um ou mais arquivos CSV:</label>
+        <label for="csv-files">Clique aqui para fazer upload do(s) seu(s) arquivos CSV:</label>
         <input type="file" id="csv-files" name="csv-files[]" accept=".csv" multiple>
         <button type="submit">Gerar relatório</button>
     </form>
     <div id="selected-files"></div>
     <div id="date-range"></div>
     <div id="report"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script src="app.js"></script>
+</body> 
+</html>
