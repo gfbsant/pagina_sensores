@@ -13,9 +13,34 @@
         <button type="submit">Gerar relatório</button>
     </form>
     <div id="selected-files"></div>
-    <div id="date-range"></div>
-    <div id="report"></div>
+    <div>
+        <button id="se-button">Sede Histórica (SE)</button>
+        <button id="rt-button">Reserva Técnica (RT)</button>
+    </div>
+    <div id="sensor-list">
+        <div id="se-list">
+            <h2>Sensores da Sede Histórica (SE)</h2>
+            <ul id="se-sensor-names"></ul>
+        </div>
+        <div id="rt-list">
+            <h2>Sensores da Reserva Técnica (RT)</h2>
+            <ul id="rt-sensor-names"></ul>
+        </div>
+    </div>
+    <div id="report">
+        <h2 id="sensor-name"></h2>
+        <table id="sensor-averages">
+            <thead>
+                <tr>
+                    <th>Média de temperatura</th>
+                    <th>Média de umidade</th>
+                </tr>
+            </thead>
+            <tbody id="sensor-averages-body"></tbody>
+        </table>
+    </div>
+   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
     <script src="app.js"></script>
-</body> 
-</html>
+    </body> 
+    </html>
